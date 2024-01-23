@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 public class BookForm {
-
+	
     /**
      * 本のタイトルを保持
      * チェック：空でないこと
