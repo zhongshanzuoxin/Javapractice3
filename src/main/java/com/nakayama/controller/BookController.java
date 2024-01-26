@@ -95,5 +95,14 @@ public class BookController {
 		//本の一覧画面にリダイレクト
 		return "redirect:/book-list";
 	}
+	
+	//本の削除
+	@GetMapping("/book-delete")
+	public String deleteBook(Model model, Book Book) {
+		//データーベースのデータ削除
+		service.delete(Book.getId());
+		//本の一覧画面にリダイレクト
+		return "redirect:/book-list";
+	}
 
 }
